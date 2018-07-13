@@ -1,0 +1,127 @@
+<%= form_with(model: lead_drop, local: true) do |form| %>
+  <% if lead_drop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lead_drop.errors.count, "error") %> prohibited this lead_drop from being saved:</h2>
+
+      <ul>
+      <% lead_drop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :da %>
+    <%= form.text_field :da, id: :lead_drop_da %>
+  </div>
+
+  <div class="field">
+    <%= form.label :create_date %>
+    <%= form.date_select :create_date, id: :lead_drop_create_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :existing_ipdsl %>
+    <%= form.text_field :existing_ipdsl, id: :lead_drop_existing_ipdsl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_speed %>
+    <%= form.text_field :max_speed, id: :lead_drop_max_speed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_name %>
+    <%= form.text_field :contact_name, id: :lead_drop_contact_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street_line_1 %>
+    <%= form.text_field :street_line_1, id: :lead_drop_street_line_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unit_number %>
+    <%= form.text_field :unit_number, id: :lead_drop_unit_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :living_unit_id %>
+    <%= form.text_field :living_unit_id, id: :lead_drop_living_unit_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lead_record_type %>
+    <%= form.text_field :lead_record_type, id: :lead_drop_lead_record_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dsl_service_type %>
+    <%= form.text_field :dsl_service_type, id: :lead_drop_dsl_service_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wireless_customer %>
+    <%= form.text_field :wireless_customer, id: :lead_drop_wireless_customer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :existing_hsia %>
+    <%= form.text_field :existing_hsia, id: :lead_drop_existing_hsia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :existing_voip %>
+    <%= form.text_field :existing_voip, id: :lead_drop_existing_voip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disposition %>
+    <%= form.text_field :disposition, id: :lead_drop_disposition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wire_center %>
+    <%= form.text_field :wire_center, id: :lead_drop_wire_center %>
+  </div>
+
+  <div class="field">
+    <%= form.label :house_nbr %>
+    <%= form.text_field :house_nbr, id: :lead_drop_house_nbr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street_name %>
+    <%= form.text_field :street_name, id: :lead_drop_street_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street_direction %>
+    <%= form.text_field :street_direction, id: :lead_drop_street_direction %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suffix_type_code %>
+    <%= form.text_field :suffix_type_code, id: :lead_drop_suffix_type_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :lead_drop_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state/province %>
+    <%= form.text_field :state/province, id: :lead_drop_state/province %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip/postal_code %>
+    <%= form.text_field :zip/postal_code, id: :lead_drop_zip/postal_code %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

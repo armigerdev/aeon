@@ -1,0 +1,2 @@
+json.extract! lead_drop, :id, :da, :create_date, :existing_ipdsl, :max_speed, :contact_name, :street_line_1, :unit_number, :living_unit_id, :lead_record_type, :dsl_service_type, :wireless_customer, :existing_hsia, :existing_voip, :disposition, :wire_center, :house_nbr, :street_name, :street_direction, :suffix_type_code, :city, :state/province, :zip/postal_code, :created_at, :updated_at
+json.url lead_drop_url(lead_drop, format: :json)

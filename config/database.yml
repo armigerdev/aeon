@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: leads_db
+  username: postgres
+  password: Password
+  host: localhost
+  # database: solcomm_dsr_staging
+
+test:
+  <<: *default
+  database: leads_db
+  username: postgres
+  password: Password
+  host: localhost
+
+production:
+  <<: *default
+  database: leads_db
+  username: solcomm_dsr_rails
+password: <%= ENV['SOLCOMM-DSR-RAILS_DATABASE_PASSWORD'] %>

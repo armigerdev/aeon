@@ -1,0 +1,82 @@
+# == Schema Information
+#
+# Table name: lead_drops
+#
+#  id                :integer          not null, primary key
+#  da                :string
+#  create_date       :date
+#  existing_ipdsl    :string
+#  max_speed         :string
+#  contact_name      :string
+#  street_line_1     :string
+#  unit_number       :string
+#  living_unit_id    :string
+#  lead_record_type  :string
+#  dsl_service_type  :string
+#  wireless_customer :string
+#  existing_hsia     :string
+#  existing_voip     :string
+#  disposition       :string
+#  wire_center       :string
+#  house_nbr         :string
+#  street_name       :string
+#  street_direction  :string
+#  suffix_type_code  :string
+#  city              :string
+#  state_province    :string
+#  zip_postal_code   :string
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#  latitude          :float
+#  longitude         :float
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  da: MyString
+  create_date: 2018-03-03
+  existing_ipdsl: MyString
+  max_speed: MyString
+  contact_name: MyString
+  street_line_1: MyString
+  unit_number: MyString
+  living_unit_id: MyString
+  lead_record_type: MyString
+  dsl_service_type: MyString
+  wireless_customer: MyString
+  existing_hsia: MyString
+  existing_voip: MyString
+  disposition: MyString
+  wire_center: MyString
+  house_nbr: MyString
+  street_name: MyString
+  street_direction: MyString
+  suffix_type_code: MyString
+  city: MyString
+  state/province: MyString
+  zip/postal_code: MyString
+
+two:
+  da: MyString
+  create_date: 2018-03-03
+  existing_ipdsl: MyString
+  max_speed: MyString
+  contact_name: MyString
+  street_line_1: MyString
+  unit_number: MyString
+  living_unit_id: MyString
+  lead_record_type: MyString
+  dsl_service_type: MyString
+  wireless_customer: MyString
+  existing_hsia: MyString
+  existing_voip: MyString
+  disposition: MyString
+  wire_center: MyString
+  house_nbr: MyString
+  street_name: MyString
+  street_direction: MyString
+  suffix_type_code: MyString
+  city: MyString
+  state/province: MyString
+  zip/postal_code: MyString
